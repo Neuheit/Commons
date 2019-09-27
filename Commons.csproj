@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <VersionPrefix>0.1</VersionPrefix>
+        <VersionSuffix>alpha</VersionSuffix>
+        <AssemblyName>Vysn.Commons</AssemblyName>
+        <RootNamespace>Vysn.Comons</RootNamespace>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Title>Vysn.Commons</Title>
+        <Authors>Yucked</Authors>
+        <Copyright>2018 - 2019 Yucked. All rights reserved.</Copyright>
+        <PackageIconUrl>https://img.icons8.com/ios-filled/100/000000/audio-wave.png</PackageIconUrl>
+        <PackageTags>Yucked, Discord, Wrapper, Discord-Wrapper, Discord.NET, DSharpPlus, Discord Library</PackageTags>
+        <PackageProjectUrl>https://github.com/Vysn/Commons</PackageProjectUrl>
+        <Description>🧠 - Shared components between Vysn libraries.</Description>
+    </PropertyGroup>
+
+</Project>
