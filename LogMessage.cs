@@ -34,14 +34,17 @@ namespace Vysn.Commons
         /// <param name="message"></param>
         /// <param name="exception"></param>
         /// <param name="level"></param>
-        public LogMessage(string source = null, string message = null,
-            Exception exception = null,
-            LogLevel level = default)
+        public LogMessage(string source = null, LogLevel level = default,
+            string message = null, Exception exception = null)
         {
             Source = source;
             Message = message;
             Exception = exception;
             Level = level;
         }
+
+        /// <inheritdoc />
+        public override string ToString()
+            => $"{Source} {Level} {Message} {Exception}";
     }
 }

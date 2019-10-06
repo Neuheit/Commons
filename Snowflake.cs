@@ -18,6 +18,14 @@ namespace Vysn.Commons
         internal Snowflake(ulong number)
             => Raw = number;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="snowflake"></param>
+        /// <returns></returns>
+        public static Snowflake FromId(ulong snowflake)
+            => new Snowflake(snowflake);
+
         /// <inheritdoc />
         public override string ToString()
             => $"{Raw}";
