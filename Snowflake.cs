@@ -12,11 +12,8 @@ namespace Vysn.Commons
         /// </summary>
         public ulong Raw { get; }
 
-        internal Snowflake(ReadOnlySpan<char> ulongId)
-            => Raw = ulong.Parse(ulongId);
-
-        internal Snowflake(ulong number)
-            => Raw = number;
+        internal Snowflake(ulong snowflake)
+            => Raw = snowflake;
 
         /// <summary>
         /// 

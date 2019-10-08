@@ -12,9 +12,6 @@ namespace Vysn.Commons.Converters
         /// <inheritdoc />
         public override Snowflake Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            if (reader.TokenType == JsonTokenType.String)
-                return new Snowflake(reader.GetString());
-
             if (reader.TokenType == JsonTokenType.Number)
                 return new Snowflake(reader.GetUInt64());
 
